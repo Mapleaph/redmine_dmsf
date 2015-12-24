@@ -55,9 +55,9 @@
       <%= radio_button_tag("commited_files[#{i}][version]", 2) %> 
       <%= upload.major_version + 1 %>.0 
       <%= l(:option_version_major) %><br/>
-      <%= radio_button_tag("commited_files[#{i}][version]", 3) %>        
+      <!--<%= radio_button_tag("commited_files[#{i}][version]", 3) %>
         <%= select_tag "commited_files[#{i}][custom_version_major]", options_for_select(0..99, upload.major_version + 2) %>.<%= select_tag "commited_files[#{i}][custom_version_minor]", options_for_select(0..99, upload.minor_version + 1) %>
-        <%= l(:option_version_custom) %>
+        <%= l(:option_version_custom) %>-->
     </div>		
   </div>
   <div class="splitcontentright clear">

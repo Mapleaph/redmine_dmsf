@@ -28,6 +28,7 @@ require 'redmine_dmsf/webdav' #DAV4Rack implementation
 # Hooks
 require 'redmine_dmsf/hooks/view_projects_form_hook'
 require 'redmine_dmsf/hooks/base_view_hooks'
+require 'redmine_dmsf/hooks/controller_project_new_after_save_hook'
 
 module RedmineDmsf
 end

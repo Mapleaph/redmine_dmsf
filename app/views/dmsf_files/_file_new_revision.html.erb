@@ -68,9 +68,9 @@
           @revision.major_version != @file.last_revision.major_version) %> 
 	<%= @file.last_revision.major_version + 1 %>.0 
         <%= l(:option_version_major) %><br/>
-        <%= radio_button_tag('version', 3) %>        
+        <!--<%= radio_button_tag('version', 3) %>
         <%= select_tag 'custom_version_major', options_for_select(0..99, @file.last_revision.major_version + 2) %>.<%= select_tag 'custom_version_minor', options_for_select(0..99, @file.last_revision.minor_version + 1) %>
-        <%= l(:option_version_custom) %>
+        <%= l(:option_version_custom) %>-->
       </div>	        
      </div>
        <div class="splitcontentright clear">

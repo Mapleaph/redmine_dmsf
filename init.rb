@@ -89,9 +89,9 @@ Redmine::Plugin.register :redmine_dmsf do
   end   
   
   # Administration menu extension
-  Redmine::MenuManager.map :admin_menu do |menu|
-    menu.push :approvalworkflows, {:controller => 'dmsf_workflows', :action => 'index'}, :caption => :label_dmsf_workflow_plural
-  end    
+  #Redmine::MenuManager.map :admin_menu do |menu|
+  #  menu.push :approvalworkflows, {:controller => 'dmsf_workflows', :action => 'index'}, :caption => :label_dmsf_workflow_plural
+  #end
   
   Redmine::WikiFormatting::Macros.register do
     desc "Wiki link to DMSF file:\n\n" +
