@@ -298,7 +298,6 @@ zh:
   label_source_folder: 原始文件夹
   label_target_project: 目标工程
   label_source_project: 原始工程
-  label_link_downloadable: 允许下载内容
 
   text_email_doc_updated_subject: "Documents of %{project} updated"
   text_email_doc_updated: has just actualized documents of
