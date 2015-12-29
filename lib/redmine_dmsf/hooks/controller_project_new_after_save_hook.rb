@@ -18,8 +18,8 @@ module RedmineDmsf
             
                 if ((hardwareFolder = check_and_update_folder(hardwareData)))
 
-                    binFolder = check_and_update_folder({:dmsf_folder_id => hardwareFolder.id, :title => "BIN", :user_id => admin_id, :project_id => project_id});
-                    bomFolder = check_and_update_folder({:dmsf_folder_id => hardwareFolder.id, :title => "BOM", :user_id => admin_id, :project_id => project_id});
+                    binFolder = check_and_update_folder({:dmsf_folder_id => hardwareFolder.id, :title => "BIN", :user_id => admin_id, :project_id => project_id, :downloadable => '1'});
+                    bomFolder = check_and_update_folder({:dmsf_folder_id => hardwareFolder.id, :title => "BOM", :user_id => admin_id, :project_id => project_id, :downloadable => '1'});
 
                     check_and_update_folder({:dmsf_folder_id => hardwareFolder.id, :title => "CPLD", :user_id => admin_id, :project_id => project_id})
                     check_and_update_folder({:dmsf_folder_id => hardwareFolder.id, :title => "DOC", :user_id => admin_id, :project_id => project_id})
@@ -27,8 +27,8 @@ module RedmineDmsf
 
                     if (pcbFolder = check_and_update_folder({:dmsf_folder_id => hardwareFolder.id, :title => "PCB", :user_id => admin_id, :project_id => project_id}))
 
-                        papFolder = check_and_update_folder({:dmsf_folder_id => pcbFolder.id, :title => "pick_and_place", :user_id => admin_id, :project_id => project_id})
-                        smtFolder = check_and_update_folder({:dmsf_folder_id => pcbFolder.id, :title => "smt_gerbers", :user_id => admin_id, :project_id => project_id})
+                        papFolder = check_and_update_folder({:dmsf_folder_id => pcbFolder.id, :title => "pick_and_place", :user_id => admin_id, :project_id => project_id, :downloadable => '1'})
+                        smtFolder = check_and_update_folder({:dmsf_folder_id => pcbFolder.id, :title => "smt_gerbers", :user_id => admin_id, :project_id => project_id, :downloadable => '1'})
                         check_and_update_folder({:dmsf_folder_id => pcbFolder.id, :title => "pcb_layout", :user_id => admin_id, :project_id => project_id})
                         check_and_update_folder({:dmsf_folder_id => pcbFolder.id, :title => "gerbers", :user_id => admin_id, :project_id => project_id})
 
@@ -41,7 +41,7 @@ module RedmineDmsf
                 if ((softwareFolder = check_and_update_folder(softwareData)))
 
                         check_and_update_folder({:dmsf_folder_id => softwareFolder.id, :title => "src", :user_id => admin_id, :project_id => project_id})
-                        releaseFolder = check_and_update_folder({:dmsf_folder_id => softwareFolder.id, :title => "release", :user_id => admin_id, :project_id => project_id})
+                        releaseFolder = check_and_update_folder({:dmsf_folder_id => softwareFolder.id, :title => "release", :user_id => admin_id, :project_id => project_id, :downloadable => '1'})
                         check_and_update_folder({:dmsf_folder_id => softwareFolder.id, :title => "DOC", :user_id => admin_id, :project_id => project_id})
 
                 end

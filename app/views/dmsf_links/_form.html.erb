@@ -75,11 +75,12 @@
 	  <%= label_tag('dmsf_link[name]', l(:label_link_name), :class => 'required') %>
         <%= text_field_tag 'dmsf_link[name]', @dmsf_link.name, :size => 40, :maxlength => 255 %>
       </p>
+      <!--
       <p>
         <%= label_tag('dmsf_link[downloadable]', l(:label_link_downloadable)) %>
         <%= check_box_tag('dmsf_link[downloadable]') %>
       </p>
-    </div>
+    </div>-->
   </div>
   <%= f.submit l(:button_create) %>
 <% end %>
