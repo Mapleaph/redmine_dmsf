@@ -188,19 +188,19 @@ class DmsfController < ApplicationController
       return
     end
 
-    if selected_dir_links.present?
-      selected_dir_links.each do |id|
-        link = DmsfLink.find_by_id id
-        selected_folders << link.target_id if link && !selected_folders.include?(link.target_id.to_s)
-      end
-    end
+    # if selected_dir_links.present?
+    #   selected_dir_links.each do |id|
+    #     link = DmsfLink.find_by_id id
+    #     selected_folders << link.target_id if link && !selected_folders.include?(link.target_id.to_s)
+    #   end
+    # end
 
-    if selected_file_links.present?
-      selected_file_links.each do |id|
-        link = DmsfLink.find_by_id id
-        selected_files << link.target_id if link && !selected_files.include?(link.target_id.to_s)
-      end
-    end
+    # if selected_file_links.present?
+    #   selected_file_links.each do |id|
+    #     link = DmsfLink.find_by_id id
+    #     selected_files << link.target_id if link && !selected_files.include?(link.target_id.to_s)
+    #   end
+    # end
 
     if params[:email_entries].present?
       email_entries(selected_folders, selected_files)
@@ -267,6 +267,12 @@ class DmsfController < ApplicationController
     @folder.project = @project
     @folder.user = User.current
     
+    if DmsfFolder.find_by id: @folder.dmsf_folder_id, downloadable: '1'
+      @folder.downloadable = 1
+    else
+      @folder.downloadable = 0
+    end
+
     # Custom fields
     if params[:dmsf_folder][:custom_field_values].present?
       params[:dmsf_folder][:custom_field_values].each_with_index do |v, i|
