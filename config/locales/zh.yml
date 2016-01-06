@@ -21,10 +21,10 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 zh:
-  dmsf: 文档管家
-  label_dmsf_file_plural: Documents
-  label_dmsf_file_revision_plural: Document revisions
-  label_dmsf_file_revision_access_plural: Document accesses
+  dmsf: 存档
+  label_dmsf_file_plural: 文档
+  label_dmsf_file_revision_plural: 文档版本
+  label_dmsf_file_revision_access_plural: 文档访问
   warning_no_entries_selected: 未选择任何条目
   error_email_to_must_be_entered: 请输入电子邮件  
   warning_file_already_locked: 文件已经锁定
@@ -145,16 +145,17 @@ zh:
   heading_uploaded_files: 上传文件
   submit_commit: 提交
   link_documents: 文档
-  permission_view_dmsf_file_revision_accesses: View downloads in Activity stream
-  permission_view_dmsf_file_revisions: View revisions in Activity stream
+  permission_view_dmsf_file_revision_accesses: 查看下载活动
+  permission_view_dmsf_file_revisions: 查看版本更新活动
   permission_view_dmsf_folders: 浏览文件夹
   permission_user_preferences: 用户偏好设定
   permission_view_dmsf_files: 查看文档
   permission_folder_manipulation: 文件夹操作
   permission_file_manipulation: 文件操作  
+  permission_file_approval: 文件批准
   permission_force_file_unlock: 强制文件解锁
-  permission_manage_workflows: Manage workflows
-  permission_file_delete: Delete documents
+  permission_manage_workflows: 管理工作流
+  permission_file_delete: 删除文件
   label_file: 文件
   field_folder: 文件夹
   error_create_cycle_in_folder_dependency: create cycle in folder dependency
@@ -174,16 +175,16 @@ zh:
   error_file_can_not_be_created: 文件未能在存储目录中创建
   error_wrong_zip_encoding: 不正确的Zip编码
   warning_xapian_not_available: Xapian not available
-  menu_dmsf: 文档管家
+  menu_dmsf: 存档
   label_physical_file_delete: 物理删除文件
   user_is_not_project_member: 您不是该项目的成员
   heading_access_downloads_emails: 存取次数
   heading_access_first: 首次
   heading_access_last: 末次
-  label_dmsf_updated: DMSF updated
-  label_dmsf_downloaded: DMSF document downloaded
+  label_dmsf_updated: 存档更新
+  label_dmsf_downloaded: 存档下载
   title_total_size_of_all_files: 文件夹所有文件总大小
-  project_module_dmsf: 文档管家  
+  project_module_dmsf: 存档
   warning_no_project_to_copy_file_to: No project to copy file to
   comment_copied_from: "Copied from %{source}"
   notice_file_copied: File copied
@@ -230,41 +231,41 @@ zh:
   error_workflow_assign: An error occured while assigning
   error_cannot_start_workflow: "Workflow can't be started"
   error_cannot_renumber_steps: "Steps can't be renumbered"
-  label_dmsf_workflow_new: New approval workflow
-  field_label_dmsf_workflow: Approval Workflow
-  field_label_dmsf_workflow_name: Approval workflow name
-  label_dmsf_workflow_plural: Approval workflows
+  label_dmsf_workflow_new: 新建工作流
+  field_label_dmsf_workflow: 工作流
+  field_label_dmsf_workflow_name: 名称
+  label_dmsf_workflow_plural: 工作流
   label_dmsf_workflow_plural_num: Approval workflows (%{count})
-  label_dmsf_workflow_step: Step
-  label_dmsf_workflow_step_plural: Steps
+  label_dmsf_workflow_step: 步骤
+  label_dmsf_workflow_step_plural: 步骤
   label_dmsf_workflow_approval: Approval
-  label_dmsf_workflow_approval_plural: Approvals
-  label_dmsf: DMSF
-  label_dmsf_wokflow_action_approve: Approve
-  label_dmsf_wokflow_action_reject: Reject
-  label_dmsf_wokflow_action_delegate: Delegate to
-  label_dmsf_wokflow_action_assign: Assign an approval workflow
-  label_dmsf_wokflow_action_start: Start workflow
-  label_dmsf_workflow_add_approver: "Add a new approver with a logical function:"
+  label_dmsf_workflow_approval_plural: 人员
+  label_dmsf: 存档
+  label_dmsf_wokflow_action_approve: 批准
+  label_dmsf_wokflow_action_reject: 拒绝
+  label_dmsf_wokflow_action_delegate: 委托给
+  label_dmsf_wokflow_action_assign: 指定工作流
+  label_dmsf_wokflow_action_start: 开始工作流
+  label_dmsf_workflow_add_approver: "为新的步骤指派人员"
   label_or: or
-  label_action: Action
-  label_note: Note  
-  title_none: None
-  title_rejection: Rejection
-  title_delegation: Delegation
-  title_assignment: Assignment
-  title_start: Start  
-  title_dmsf_workflow_log: Approval Workflow Log
-  title_assigned: Assigned
-  title_approval: Approval
-  title_rejected: Rejected
-  dmsf_and: AND
-  dmsf_or: OR
-  dmsf_new_step: New step  
-  message_dmsf_wokflow_note: Your note...
+  label_action: 动作
+  label_note: 备注
+  title_none: 无
+  title_rejection: 拒绝
+  title_delegation: 委托
+  title_assignment: 指派
+  title_start: 开始
+  title_dmsf_workflow_log: 工作流日志
+  title_assigned: 已指派
+  title_approval: 批准
+  title_rejected: 拒绝
+  dmsf_and: 顺序
+  dmsf_or: 并行
+  dmsf_new_step: 新建步骤  
+  message_dmsf_wokflow_note: 备注...
   info_revision: "r%{rev}"
-  link_workflow: Workflow  
-  notice_workflow_started: Approval workflow successfully started
+  link_workflow: 工作流  
+  notice_workflow_started: 成功启动工作流
   text_email_subject_approved: "Approval workflow %{name} approved"
   text_email_subject_rejected: "Approval workflow %{name} rejected"
   text_email_subject_delegated: "Approval workflow %{name} delegated"
@@ -283,13 +284,13 @@ zh:
   label_my_open_approvals: My open approvals
   label_my_locked_documents: My locked documents
   
-  title_create_link: Create a symbolic link  
+  title_create_link: 创建新链接  
   label_link_from: 创建文件链接
   label_link_to: 链接到
   label_notifications_on: 打开通知
   label_notifications_off: 关闭通知
   field_target_file: 原始文件
-  title_download_entries: Download entries
+  title_download_entries: 下载
   label_external: 外部
   
   label_link_name: 链接名称
@@ -299,10 +300,10 @@ zh:
   label_target_project: 目标工程
   label_source_project: 原始工程
 
-  text_email_doc_updated_subject: "Documents of %{project} updated"
-  text_email_doc_updated: has just actualized documents of
-  text_email_doc_follows: as follows
-  text_email_doc_deleted_subject: "Documents of %{project} deleted"
+  text_email_doc_updated_subject: "%{project} 存档更新"
+  text_email_doc_updated: 刚刚更新了
+  text_email_doc_follows: 的如下文档
+  text_email_doc_deleted_subject: "%{project} 存档删除"
   text_email_doc_deleted: has just deleted documents of
   label_links_only: links only
   
