@@ -259,8 +259,8 @@ zh:
   title_assigned: 已指派
   title_approval: 批准
   title_rejected: 拒绝
-  dmsf_and: 顺序
-  dmsf_or: 并行
+  dmsf_and: AND
+  dmsf_or: OR
   dmsf_new_step: 新建步骤  
   message_dmsf_wokflow_note: 备注...
   info_revision: "r%{rev}"
